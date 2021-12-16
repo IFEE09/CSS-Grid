@@ -3,9 +3,13 @@
     background-color: #fff1ff;
     display: grid;
     /* Esta parte especifica el tamaño de cada columna. */
-    grid-template-columns: 100px 200px 300px;
+    grid-template-columns: 100px 100px 100px;
     /* Esta parte especifica el tamaño de cada fila */
-    grid-template-rows: 150px 250px;
+    grid-template-rows: 100px 100px;
+    justify-content: center;
+    gap: 15px;
+    padding: 70px;
+    align-content: center;
 }
 
 .item-1 {
@@ -17,14 +21,42 @@
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    /* Esta parte especifica el tamaño de cada columna. */
-    grid-template-columns: 100px 200px 300px;
-    /* Esta parte especifica el tamaño de cada fila */
-    grid-auto-rows: 150px;
-    grid-auto-flow: column;
+    /* Esta parte especifica el tamaño de cada columna en especifico */
+    grid-template-rows: 100px 200px;
+    /* Esta parte especifica el tamaño de cada fila que se crea */
+    grid-auto-columns: 100px;
+    grid-auto-flow: column; 
+    /* Gap es el tamaño que hay entre filas y columnas, tambien se puede usar solo gap */
+    row-gap: 20px;
+    column-gap: 30px;
 }
 
 .item-2 {
     border: 5px solid #00bcd4;
     font-size: 4rem;
+}
+
+.container-3 {
+    font-weight: bolder;
+    color: white;
+    margin: 15px;
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-template-columns: 100px 100px;
+    grid-auto-flow: column;
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px;
+    position: relative;
+    
+}
+
+.item-3 {
+    background-color: green;
+    position: relative;
+    text-align: right;
+    position: relative;
+    bottom: 0!important;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
 }
