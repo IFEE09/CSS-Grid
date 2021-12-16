@@ -1,0 +1,30 @@
+.container-1 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    /* Esta parte especifica el tamaño de cada columna. */
+    grid-template-columns: 100px 200px 300px;
+    /* Esta parte especifica el tamaño de cada fila */
+    grid-template-rows: 150px 250px;
+}
+
+.item-1 {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}
+
+.container-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    /* Esta parte especifica el tamaño de cada columna. */
+    grid-template-columns: 100px 200px 300px;
+    /* Esta parte especifica el tamaño de cada fila */
+    grid-auto-rows: 150px;
+    grid-auto-flow: column;
+}
+
+.item-2 {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}
