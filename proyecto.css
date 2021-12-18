@@ -9,8 +9,9 @@ main {
 
 .hero {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: repeat(2, minmax(250px, 600px));
     place-content: center;
+    border-bottom: 1px solid gray;
 }
 
 .item-hero {
@@ -19,11 +20,13 @@ main {
 
 .hero img {
     object-fit: contain;
-    width: 80%;
+    width: 100%;
 }
 
 .check {
     align-self: center;
+    font-size: 30px;
+    padding: 20px;
 }
 
 .services {
@@ -40,8 +43,9 @@ main {
 }
 
 .our-services {
+    margin: 100px 0px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(100px, 300px));
     grid-template-rows: repeat(2, 1fr);
     gap: 40px;
     grid-template-areas: 
@@ -59,8 +63,35 @@ main {
 .our-services img {     
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .our-services .video {
     grid-area: video;
+}
+
+.menu {
+    text-align: center;
+    font-size: 50px;
+    margin: 50px 0px;
+}
+
+.home-menu {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 300px));
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.home-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-item {
+    padding: 15px;
+    background-color: rgb(255, 220, 208);
+    place-self: center;
+    border-top-left-radius: 30px;
 }
